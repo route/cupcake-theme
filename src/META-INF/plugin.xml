@@ -1,0 +1,52 @@
+<idea-plugin>
+  <id>io.github.route.cupcake</id>
+  <name>Cupcake</name>
+  <version>1.2.0</version>
+  <vendor email="d.vorotilin@gmail.com" url="https://github.com/route">Dmitry Vorotilin</vendor>
+
+  <change-notes><![CDATA[
+    <h2>1.2.0</h2>
+    <ul>
+      <li>Publish as <code>io.github.route.cupcake</code> with a plugin icon and a preview.
+          Uninstall the previous <code>com.rioam2.cupcake</code> build first; the theme
+          selection carries over.</li>
+    </ul>
+    <h2>1.1.1</h2>
+    <ul>
+      <li>Give code spans in doc comments a raised purple background instead of Ruby's
+          Darcula grey.</li>
+    </ul>
+    <h2>1.1.0</h2>
+    <ul>
+      <li>Recolor the IDE itself. The theme now inherits Islands Dark and swaps its palette
+          for Cupcake's: purple-tinted surfaces, a deep purple window frame, and purple,
+          pink, yellow and cyan accents. Requires the Islands UI (2025.3 or later).</li>
+    </ul>
+    <h2>1.0.0</h2>
+    <ul>
+      <li>Port the Cupcake VS Code palette to an editor color scheme built on Darcula.</li>
+    </ul>
+  ]]></change-notes>
+
+  <description><![CDATA[
+    <p><img src="https://raw.githubusercontent.com/route/cupcake-theme/main/docs/preview.png"
+            width="820" alt="Cupcake in RubyMine"></p>
+    <p>The <b>Cupcake</b> palette as an editor color scheme and an Islands UI theme.</p>
+    <p>The UI inherits the bundled Islands Dark theme and only replaces its color palette,
+    so new components added in later IDE versions pick up Cupcake colors automatically.
+    The editor uses Cupcake's own colors: <code>#2B2746</code> background,
+    <code>#FFFFFF</code> text, <code>#8175D2</code> comments, and the
+    purple/pink/magenta/yellow/cyan accent set.</p>
+    <p>The scheme does not pin a font, so your global editor font, size and line spacing
+    are left untouched.</p>
+    <p>Palette by Geoffrey, republished as rioam2/cupcake-ui. Source:
+    <a href="https://github.com/route/cupcake-theme">github.com/route/cupcake-theme</a>.</p>
+  ]]></description>
+
+  <depends>com.intellij.modules.platform</depends>
+  <idea-version since-build="253" />
+
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="59882f3a-a68f-48bc-8323-91fbcc66f913" path="/Cupcake.theme.json" />
+  </extensions>
+</idea-plugin>
